@@ -145,6 +145,7 @@ app.post('/register/verify-otp', async (req, res) => {
 
 
 app.get('/ping', (req, res) => {
+  console.log('Ping received at', new Date().toLocaleTimeString());
   res.send('pong');
 });
 
