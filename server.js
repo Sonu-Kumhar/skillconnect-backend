@@ -144,9 +144,9 @@ app.post('/register/verify-otp', async (req, res) => {
 });
 
 
-
-
-
+app.get('/ping', (req, res) => {
+  res.send('pong');
+});
 
 // Login
 app.post('/login', async (req, res) => {
